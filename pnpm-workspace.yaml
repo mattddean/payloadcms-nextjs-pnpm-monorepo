@@ -1,0 +1,5 @@
+packages:
+  - packages/config/*
+  - apps/nextjs
+  - apps/payloadcms
+  - apps/mongodb

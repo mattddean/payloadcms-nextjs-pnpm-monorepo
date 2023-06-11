@@ -1,0 +1,21 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"],
+  "pipeline": {
+    "dev": {
+      "dependsOn": ["generate-gqty-payloadcms"]
+    },
+    "build": {
+      "dependsOn": ["generate-gqty-payloadcms"],
+      "outputs": [".next/**"]
+    },
+    "type-check": {
+      "dependsOn": ["generate-gqty-payloadcms"]
+    },
+    "generate-gqty-payloadcms": {
+      "dependsOn": ["@acme/payloadcms#generate-gql-schema"],
+      "outputs": ["./src/graphql/payloadcms/generated-gqty/schema.generated.ts"],
+      "inputs": ["../payloadcms/src/generated-schema.graphql"]
+    }
+  }
+}

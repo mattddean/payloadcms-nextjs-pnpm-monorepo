@@ -1,0 +1,45 @@
+# ignore installed Applications, and Plugins
+/System/Plugins/
+
+# ---> macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# js
+
+node_modules
+dist
+types
+tsconfig.tsbuildinfo
+
+.swc
+.turbo
+.env
+
+# @acme/payloadcms
+/apps/payloadcms/src/generated-schema.graphql
+/apps/payloadcms/src/payload-types.ts
+
+# @acme/nextjs
+/apps/nextjs/.next
+/apps/nextjs/gqty.config.cjs
+/apps/nextjs/src/graphql/payloadcms/generated-gqty/schema.generated.ts

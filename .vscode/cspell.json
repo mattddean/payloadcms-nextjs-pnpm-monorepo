@@ -1,0 +1,24 @@
+{
+  "version": "0.2",
+  "ignorePaths": [],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": ["refetches"],
+  "ignoreWords": [
+    "roarr",
+    "callees",
+    "copyfiles",
+    "gqty",
+    "headlessui",
+    "hookform",
+    "ianvs",
+    "initdb",
+    "manypkg",
+    "nextjs",
+    "payloadcms",
+    "tailwindcss",
+    "turborepo",
+    "turbowatch"
+  ],
+  "import": []
+}

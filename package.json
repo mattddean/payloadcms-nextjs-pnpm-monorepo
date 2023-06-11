@@ -1,0 +1,41 @@
+{
+  "name": "payloadcms-nextjs-pnpm-monorepo",
+  "private": true,
+  "engines": {
+    "node": "^16.16.0"
+  },
+  "packageManager": "pnpm@8.6.1",
+  "scripts": {
+    "build": "pnpm with-env turbo build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo clean",
+    "dev": "pnpm with-env turbo dev --parallel",
+    "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,json}\" --ignore-path .gitignore --ignore-path .prettierignore",
+    "lint": "turbo lint && manypkg check",
+    "lint:fix": "turbo lint:fix && manypkg fix",
+    "type-check": "turbo type-check",
+    "with-env": "dotenv -e .env --",
+    "payload-cloud-build": "npm i -g pnpm@8.6.1 && pnpm install && cd apps/payloadcms && pnpm turbo build",
+    "payload-cloud-serve": "cd apps/payloadcms && pnpm turbo serve"
+  },
+  "dependencies": {
+    "@acme/eslint-config": "^0.1.0",
+    "@acme/mongodb": "*",
+    "@acme/nextjs": "*",
+    "@acme/payloadcms": "*",
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
+    "@manypkg/cli": "^0.20.0",
+    "@types/prettier": "^2.7.2",
+    "dotenv-cli": "^7.0.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-tailwindcss": "^3.11.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "turbo": "^1.9.9",
+    "typescript": "^5.0.3"
+  },
+  "volta": {
+    "node": "16.16.0",
+    "pnpm": "8.6.1"
+  }
+}

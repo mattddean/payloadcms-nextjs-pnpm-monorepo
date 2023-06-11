@@ -1,0 +1,40 @@
+{
+  "name": "@acme/nextjs",
+  "private": true,
+  "version": "0.2.0",
+  "scripts": {
+    "build": "pnpm with-env next build",
+    "clean": "git clean -xdf .next .turbo node_modules",
+    "dev": "pnpm with-env next dev -p 3004",
+    "lint": "dotenv -v SKIP_ENV_VALIDATION=1 next lint",
+    "lint:fix": "pnpm lint --fix",
+    "start": "pnpm with-env next start",
+    "type-check": "tsc --noEmit",
+    "generate-gqty-payloadcms": "cp gqty.config.payloadcms.cjs gqty.config.cjs && pnpm with-env gqty generate && rm gqty.config.cjs",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "packageManager": "pnpm@8.6.1",
+  "dependencies": {
+    "@delicious-simplicity/next-image-imgix-loader": "^1.1.0",
+    "@t3-oss/env-nextjs": "^0.4.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "dotenv": "^8.2.0",
+    "gqty": "^3.0.0-alpha-4a2eebdf.0",
+    "next": "13.4.4",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@acme/eslint-config": "^0.1.0",
+    "@gqty/cli": "4.0.0-alpha-4ad34526.0",
+    "@types/node": "^16.18.34",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "18.2.4",
+    "eslint": "^8.34.0",
+    "postcss": "^8.4.23",
+    "tailwindcss": "3.3.2",
+    "typescript": "^5.0.3"
+  }
+}

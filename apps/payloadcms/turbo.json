@@ -1,0 +1,55 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"],
+  "pipeline": {
+    "dev": {
+      "dependsOn": ["generate-types", "@acme/mongodb#dev"],
+      "env": [
+        "PAYLOAD_PUBLIC_SERVER_URL",
+        "PAYLOAD_PUBLIC_SITE_URL",
+        "PAYLOAD_SECRET",
+        "MONGODB_URI",
+        "PORT",
+        "SKIP_ENV_VALIDATION"
+      ]
+    },
+    "serve": {
+      "env": [
+        "PAYLOAD_PUBLIC_SERVER_URL",
+        "PAYLOAD_PUBLIC_SITE_URL",
+        "PAYLOAD_SECRET",
+        "MONGODB_URI",
+        "PORT",
+        "SKIP_ENV_VALIDATION"
+      ]
+    },
+    "build": {
+      "dependsOn": ["generate-types"],
+      "env": [
+        "PAYLOAD_PUBLIC_SERVER_URL",
+        "PAYLOAD_PUBLIC_SITE_URL",
+        "PAYLOAD_SECRET",
+        "MONGODB_URI",
+        "PORT",
+        "SKIP_ENV_VALIDATION"
+      ]
+    },
+    "type-check": {
+      "dependsOn": ["generate-types"],
+      "env": [
+        "PAYLOAD_PUBLIC_SERVER_URL",
+        "PAYLOAD_PUBLIC_SITE_URL",
+        "PAYLOAD_SECRET",
+        "MONGODB_URI",
+        "PORT",
+        "SKIP_ENV_VALIDATION"
+      ]
+    },
+    "generate-types": {
+      "outputs": ["./src/payload-types.ts"]
+    },
+    "generate-gql-schema": {
+      "outputs": ["./src/generated-schema.graphql"]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.surveys.enabled": false,
+  "npm.autoDetect": "on",
+  "git.inputValidationLength": 1000,
+  "git.inputValidationSubjectLength": 100,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.watcherExclude": {
+    ".git": true,
+    "node_modules": true
+  },
+  "files.exclude": {
+    // we hide this so that we don't accidentally try to edit it; it's just a copy of the root .env file
+    "apps/mongodb/.env": true
+  },
+}

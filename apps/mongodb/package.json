@@ -1,0 +1,18 @@
+{
+  "name": "@acme/mongodb",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "packageManager": "pnpm@8.6.1",
+  "scripts": {
+    "dev": "pnpm cp-env && COMPOSE_PROJECT_NAME=payloadcms-nextjs-pnpm-monorepo docker compose up --build -d",
+    "clean": "rm -rf .turbo node_modules",
+    "cp-env": "cp ../../.env ."
+  },
+  "config": {
+    "fund": false
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

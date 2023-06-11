@@ -1,0 +1,24 @@
+{
+  "name": "@acme/eslint-config",
+  "version": "0.1.0",
+  "main": "index.js",
+  "packageManager": "pnpm@8.6.1",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules"
+  },
+  "dependencies": {
+    "@types/eslint": "^8.37.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint-config-next": "^13.2.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-turbo": "^1.8.8",
+    "eslint-plugin-only-warn": "^1.0.3",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-tailwindcss": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "typescript": "^5.0.3"
+  }
+}

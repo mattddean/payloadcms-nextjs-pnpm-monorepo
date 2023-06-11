@@ -1,0 +1,10 @@
+node_modules
+.vscode
+.git
+dist
+*.js
+gqty.config.*
+env.mjs
+env.cjs
+next.config.mjs
+turbowatch.*.ts

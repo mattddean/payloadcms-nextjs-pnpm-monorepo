@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  payload_mongo:
+    build: ./
+    ports:
+      - '${MONGO_PORT}:27017'
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+      - MONGO_PAYLOAD_USER=${MONGO_PAYLOAD_USER}
+      - MONGO_PAYLOAD_PASSWORD=${MONGO_PAYLOAD_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}
+    volumes:
+      - payload_mongo_data:/data/db
+
+volumes:
+  payload_mongo_data:
