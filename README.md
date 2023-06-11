@@ -12,7 +12,7 @@ Next.js queries PayloadCMS with [gqty](https://gqty.dev/).
    cp .env.example .env
    ```
 
-   Obtain environment variables from a teammate and put them in `.env`.
+   Update your `.env` file with your own environment variables.
 
 1. Install colima and docker
 
