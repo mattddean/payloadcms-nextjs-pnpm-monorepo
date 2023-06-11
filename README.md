@@ -4,6 +4,8 @@ A PayloadCMS Next.js monorepo example, using pnpm as its package manager, with a
 
 Next.js queries PayloadCMS with [gqty](https://gqty.dev/).
 
+Inspired by [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo) and PayloadCMS's [E-Commerce Template](https://github.com/payloadcms/template-ecommerce).
+
 ## Getting Started
 
 1. Set up .env file
