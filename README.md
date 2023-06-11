@@ -47,8 +47,10 @@ Next.js queries PayloadCMS with gqty.
 
 Use the following build configuration to install your dependencies with pnpm and to build and serve your PayloadCMS app with Turborepo.
 
+<img width="1008" alt="Screenshot 2023-06-11 at 4 04 45 PM" src="https://github.com/mattddean/payloadcms-nextjs-pnpm-monorepo/assets/29106809/d3923953-3e7a-476c-bb26-d78febc98c63">
+
 ## Deploy Next.js app to Vercel
 
-Let's deploy the Next.js application to [Vercel](https://vercel.com/). If you have ever deployed a Turborepo app there, the steps are quite straightforward. You can also read the [official Turborepo guide](https://vercel.com/docs/concepts/monorepos/turborepo) on deploying to Vercel.
-
 Vercel has built-in Turborepo support. Use the following following build configuration to install your dependencies with pnpm and to build your Next.js app with Turborepo.
+
+<img width="957" alt="Screenshot 2023-06-11 at 3 59 52 PM" src="https://github.com/mattddean/payloadcms-nextjs-pnpm-monorepo/assets/29106809/f1cfc335-d444-4c01-9c38-dc32d36fccc6">
