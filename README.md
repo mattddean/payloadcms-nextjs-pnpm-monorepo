@@ -2,7 +2,7 @@
 
 A PayloadCMS Next.js monorepo example, using pnpm as its package manager, with an emphasis on end-to-end typesafety.
 
-Next.js queries PayloadCMS with gqty.
+Next.js queries PayloadCMS with [gqty](https://gqty.dev/).
 
 ## Getting Started
 
