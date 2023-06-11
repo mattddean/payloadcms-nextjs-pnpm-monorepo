@@ -5,8 +5,10 @@
   "dictionaries": [],
   "words": ["refetches"],
   "ignoreWords": [
-    "roarr",
+    "linebreak",
+    "unmergeable",
     "callees",
+    "clsx",
     "copyfiles",
     "gqty",
     "headlessui",
@@ -16,9 +18,11 @@
     "manypkg",
     "nextjs",
     "payloadcms",
+    "roarr",
     "tailwindcss",
     "turborepo",
-    "turbowatch"
+    "turbowatch",
+    "typesafety"
   ],
   "import": []
 }

@@ -1,6 +1,7 @@
 import path from 'path'
 import { payloadCloud } from '@payloadcms/plugin-cloud'
 import { buildConfig } from 'payload/config'
+import { blogPagesCollection } from './collections/blog-pages'
 import { usersCollection } from './collections/users'
 import { env } from './env'
 
@@ -22,7 +23,7 @@ export default buildConfig({
     }),
   },
   serverURL: env.PAYLOAD_PUBLIC_SERVER_URL,
-  collections: [usersCollection],
+  collections: [usersCollection, blogPagesCollection],
   globals: [],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
